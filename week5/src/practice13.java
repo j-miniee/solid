@@ -36,6 +36,24 @@ public class practice13 {
         } else {
             System.out.println("비겼습니다.");
         }
+		
+		/*
+			do{
+			
+			
+			
+			} while(!((s1.equals("가위"))||(s1.equals("바위"))||(s1.equals("보"))));
+			...
+			
+			if (s1.equals("바위")) {
+				if(s2.equals("보"))
+					영희 이김;
+				else
+					철수 이김;
+			}else if ..
+		
+        	} 
+	*/
 	}
 
 }

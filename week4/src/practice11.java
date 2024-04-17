@@ -26,6 +26,29 @@ public class practice11 {
 			System.out.println("입력된 숫자 "+n+"은 소수입니다.");
 		else 
 			System.out.println("입력된 숫자 "+n+"은 소수가 아닙니다.");
+		
+		/*
+		 * while(true){
+				System.out.print("숫자를 입력하세요: "); 
+				int n = sc.nextInt();
+				
+				if(n <= 0) {
+					System.out.println("잘못된 입력입니다. 다시 입력하세요.");
+				}else{
+					for(int i = 1; i <= n; i++) {
+						if(n % i == 0)
+							cnt++;
+					}
+				
+					if(cnt == 2) {
+						System.out.println("입력된 숫자 "+n+"은 소수입니다.");
+					}else{
+					System.out.println("입력된 숫자 "+n+"은 소수가 아닙니다.");
+					}
+				}
+		  }
+		 * */
+		
 	}
 
 }

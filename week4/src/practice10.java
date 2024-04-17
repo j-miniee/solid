@@ -7,6 +7,21 @@ public class practice10 {
 		
 		int sum = 0;
 		int cnt = 0;
+		/* 
+			while(true){
+				System.out.print("숫자를 입력하세요: ");
+				int n = sc.nextInt();
+				
+				if(n < 0) {
+					System.out.println("음수가 입력되었습니다. 다시 입력하세요");
+				} else if(n > 0) {
+					sum += n;
+					cnt++;
+				} else{
+					break;
+				} 
+		 } */
+		
 		int max_cnt = 0;
 		double avg = 0;
 		int n;

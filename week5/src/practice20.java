@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class practice20 {
@@ -22,10 +21,18 @@ public class practice20 {
 			}
 		}
 		return -1;
+		
+		/*int cnt = 0;
+		for(int i =0; i < array.length; i++) {
+			cnt++;
+			if(array[i] == key) {
+				return cnt-1;
+			}
+		}
+		return -1;*/
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Random rg = new Random();
 		Scanner sc = new Scanner(System.in);
 		
 		int same = 0, differ = 0;
@@ -34,9 +41,7 @@ public class practice20 {
 		int user[] = new int[3];
 		
 		for(int i = 0; i < arr.length; i++) {
-			if(rg.nextInt(10) != 0) {
-				arr[i] = rg.nextInt(10);
-			}
+			arr[i] = (int)((Math.random()*9))+1;
 		}
 		printArray(arr);
 		
@@ -46,7 +51,7 @@ public class practice20 {
 		}
 		for(int i = 0; i < user.length; i++) {
 			int n = searchArray(arr, user, i);
-			if(n == 1) {
+			if(n == 1) { //if(n == i) same++;
 				same++;
 			}else if(n == 0) {
 				differ++;

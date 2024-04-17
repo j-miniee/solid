@@ -8,8 +8,9 @@ public class practice02 {
 		System.out.print("화씨 온도를 입력하세요: ");
 		int F = sc.nextInt();
 		
-		double C = (5.0 / 9.0) *(F-32); 
+		double C = (double) 5/9 *(F-32); 
 		//(5/9)로 하면 정수 나눗셈으로 처리되어 항상 0이 반환됨 => 실수로 나누어야 함
+		//(5.0/9.0)으로 하거나 (double) 5/9 이렇게 강제 형변환 시켜야 함.
 		System.out.print("해당하는 섭씨 온도는 "+ C + "입니다.");
 		
 		

@@ -33,6 +33,26 @@ public class practice14 {
         } else {
             System.out.println("비겼습니다.");
         }
+		
+		/*
+		  if(!(com.equals(you))){
+		  	if(com.equals("가위")){
+		  		if(you.equals("바위"))
+		  			내가 이김;
+		  		else
+		  			컴퓨터가 이김;
+		  	}else if(컴 = 바위) {
+		  	
+		  	}else{
+		  	
+		  	}
+		  }
+		  
+		 else{
+		  	비겼음
+		 }
+
+		 */
 	}
 
 }

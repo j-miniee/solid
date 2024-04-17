@@ -11,14 +11,15 @@ public class practice18 {
 	}
 	
 	public static int searchArray(int[] array, int key) {
-		int key_Idx;
+		int key_Idx = -1;
 		for(int i =0; i < array.length; i++) {
 			if(array[i] == key) {
-				key_Idx = i;
-				return key_Idx;
+				if(key_Idx == -1 || i < key_Idx) {
+					key_Idx = i;
+				}				
 			}
 		}
-		return -1;
+		return key_Idx;
 	}
 	
 	public static void main(String[] args) {
