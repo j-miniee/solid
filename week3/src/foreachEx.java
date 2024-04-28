@@ -8,19 +8,22 @@ public class foreachEx {
 		String names[] = {"사과", "배", "바나나", "체리", "딸기", "포도"};
 		
 		int sum = 0;
-		for(int k:n) {
-			System.out.print(k + " ");
-			sum += k;
+		for(int i : n) {
+			sum += i;
 		}
-		System.out.println("합은 "+sum);
+		for(int i : n) {
+			System.out.print(i + " ");
+		}
 		
-		for(String s: names)
-			System.out.print(s + " ");
-		System.out.println();
+		System.out.println("합은 "+ sum);
 		
-		for(Week day : Week.values())
-			System.out.print(day + "요일 ");
+		for(String c : names) {
+			System.out.print(c + " ");
+		}
 		System.out.println();
+		for(Week w : Week.values()) { //여기 처음 써보는 부분
+			System.out.print(w + "요일 ");
+		}
 	}
 
 }
